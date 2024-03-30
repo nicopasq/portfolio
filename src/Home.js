@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function About(){
+export default function Home(){
     return (
         <div>
-            WELCOME TO ABOUT PAGE
+            MAIN PAGE CONTENT
         </div>
     )
 }

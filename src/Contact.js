@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function About(){
+export default function Contact(){
     return (
         <div>
-            WELCOME TO ABOUT PAGE
+            HELLO FROM CONTACT PAGE
         </div>
     )
 }
