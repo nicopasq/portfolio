@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './Header';
-import Footer from './Footer';
 import { Route, Routes } from 'react-router';
-import About from './About';
-import Contact from './Contact';
-import Home from './Home';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   return (
