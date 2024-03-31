@@ -1,3 +1,6 @@
 html, body{
   background-color: rgb(215, 215, 203);
 }
+.mainText{
+  font-family: 'Kanit';
+}

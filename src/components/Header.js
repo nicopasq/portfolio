@@ -7,10 +7,10 @@ export default function Header(){
     }
     return (
         <div>
-            Header
-            <Link to={'/'} style={style}>Home</Link>
-            <Link to={'/about'} style={style}>About</Link>
-            <Link to={'/Contact'} style={style}>Contact</Link>
+            <h3 className="mainText">PASQMEDIA</h3>
+            <Link to={'/'} style={style} className="subText">Home</Link>
+            <Link to={'/about'} style={style} className="subText">About</Link>
+            <Link to={'/Contact'} style={style} className="subText">Contact</Link>
         </div>
     )
 }
