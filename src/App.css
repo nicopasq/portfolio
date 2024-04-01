@@ -1,6 +1,30 @@
 html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Michroma';
   background-color: rgb(215, 215, 203);
 }
 .mainText{
-  font-family: 'Kanit';
+  font-family: 'Lexend';
+}
+#header{
+  position: relative;
+  bottom: 3.5vh;
+  height: 9vh;
+  background:linear-gradient(rgba(0, 45, 30, 0.457), rgb(215, 215, 203) );
+}
+#links{
+  position: relative;
+  bottom: 5vh;
+  font-size: 15px;
+}
+#title{
+  font-size: 30px;
+  font-weight: 800;
+  position: relative;
+  left: 45%;
+  top: 2vh;
+}
+#homeBtn{
+  margin-left: 20px;
 }

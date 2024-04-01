@@ -3,14 +3,19 @@ import { Link } from "react-router-dom";
 
 export default function Header(){
     const style = {
-        marginLeft:'10px'
+        marginRight:'60px',
+        color:'black',
+        textDecoration:'none',
+        textStretch:'compact',
     }
     return (
-        <div>
-            <h3 className="mainText">PASQMEDIA</h3>
-            <Link to={'/'} style={style} className="subText">Home</Link>
-            <Link to={'/about'} style={style} className="subText">About</Link>
-            <Link to={'/Contact'} style={style} className="subText">Contact</Link>
+        <div id="header">
+            <h3 className="mainText" id='title'>PASQMEDIA</h3>
+            <div id="links">
+                <Link to={'/'} style={style} id="homeBtn" className="subText">Home</Link>
+                <Link to={'/about'} style={style} className="subText">About</Link>
+                <Link to={'/Contact'} style={style} className="subText">Contact</Link>
+            </div>
         </div>
     )
 }
