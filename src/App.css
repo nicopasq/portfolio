@@ -3,15 +3,16 @@ html, body{
   padding: 0;
   font-family: 'Michroma';
   background-color: rgb(215, 215, 203);
+  overflow-x: hidden;
 }
-.mainText{
-  font-family: 'Lexend';
+#homeContainer{
+  height: 100vh;
 }
 #header{
-  position: relative;
-  bottom: 3.5vh;
   height: 9vh;
   background:linear-gradient(rgba(0, 45, 30, 0.457), rgb(215, 215, 203) );
+  position: relative;
+  bottom: 3.5vh;
 }
 #links{
   position: relative;
@@ -19,12 +20,68 @@ html, body{
   font-size: 15px;
 }
 #title{
+  width:fit-content;
+  font-family: 'Lexend';
   font-size: 30px;
   font-weight: 800;
+  color: black;
   position: relative;
   left: 45%;
   top: 2vh;
+  text-decoration: none;
+  z-index: 9999999999;
+}
+#title:hover{
+  cursor: pointer;
 }
 #homeBtn{
   margin-left: 20px;
+}
+#homeText{
+  font-weight: 100;
+  font-size: 16px;
+  width: 26vw;
+  height: 10vh;
+  position: relative;
+  top: 20vh;
+  left: 18vw;
+  line-height: 30px;
+}
+#footer{
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(164, 96, 107);
+  position: absolute;
+}
+#scrollContainer{
+  height: 10vh;
+}
+#scrollTextPrimary, #scrollTextSecondary{
+  color: rgb(90, 90, 90);
+  position: relative;
+  font-size: 60px;
+  margin-top: 0;
+  height: 10vh;
+  width: max-content;
+}
+#scrollTextPrimary{
+  display: flex;
+  justify-content: space-around;
+  animation: my-animation 15s linear infinite;
+}
+#scrollTextSecondary{
+  animation: my-animation 15s linear infinite; 
+  position: relative;
+  bottom:26vh;
+  left: 100%;
+  margin-left: 2.5%;
+}
+
+@keyframes my-animation {
+  0%{
+   transform: translate(10%);
+  }
+  100% {
+    transform: translate(-100%);
+  }
 }

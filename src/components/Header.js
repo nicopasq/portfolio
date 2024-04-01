@@ -1,7 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Header(){
+    const navigate = useNavigate()
     const style = {
         marginRight:'60px',
         color:'black',
@@ -10,7 +11,7 @@ export default function Header(){
     }
     return (
         <div id="header">
-            <h3 className="mainText" id='title'>PASQMEDIA</h3>
+            <h3 className="mainText" id='title' onClick={() => navigate('/')}>PASQMEDIA</h3>
             <div id="links">
                 <Link to={'/'} style={style} id="homeBtn" className="subText">Home</Link>
                 <Link to={'/about'} style={style} className="subText">About</Link>
