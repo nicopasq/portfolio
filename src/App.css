@@ -96,12 +96,69 @@ html, body{
   }
 }
 
+/* About Block - Home Page */
 #aboutBlock{
   background-color: rgb(207, 147, 117);
   height: 80vh;
 }
+#aboutBlockMainText{
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.713);
+  position: relative;
+  top: 12vh;
+}
+#dropdown{
+  border: 1px solid blue;
+  margin-top: 17%;
+  height: 35vh;
+}
 
+/* Project Block - Home Page */
 #projectBlock{
-  color: rgb(164, 96, 107);
+  text-align: center;
   height: 60vh;
+  overflow: hidden;
+}
+#projectBlockMainText{
+  font-size: 60px;
+  color: rgb(207, 147, 117);
+  margin-top: 10%;
+}
+
+/* Project Displays - Home Page */
+.projectDisplay{
+  overflow: hidden;
+  height: 100vh;
+  border: 1px solid;
+}
+.displayContainer{
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.projectTitle{
+  font-size: 40px;
+  width: 10vh;
+}
+.projectImg{
+  height: 40vh;
+  width: 70vh;
+  border-radius: 10vh;
+}
+.projectTextBlock{
+  text-align: left;
+  color: rgb(0, 0, 0);
+  width: 65vh;
+  position: relative;
+  bottom: 45vh;
+  left: 60%;
+}
+.date{
+  margin-left: 2vw;
+  font-weight: 100;
+}
+.list{
+  font-weight: 100;
+  color: black;
 }
