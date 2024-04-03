@@ -39,7 +39,7 @@ html, body{
 }
 #footer{
   width: 100%;
-  height: 15vh;
+  height: 10vh;
   background:linear-gradient(rgb(207, 147, 117), rgb(164, 96, 107) );
   position: absolute;
 }
@@ -155,6 +155,65 @@ html, body{
 /* Contact Form - Home Page / Contact Page */
 .contactFormContainer{
   border: 1px solid;
-  height: 85vh;
+  height: 91vh;
   font-size: 30px;
+}
+.contactForm{
+  height: fit-content;
+  width: 39vw;
+  margin-left: 5vw;
+  position: relative;
+  bottom: 8vh;
+}
+.inputContainer{
+  border: 1px solid rgba(255, 255, 255, 0);
+  height: 18vh;
+}
+.nameInput{
+  height: 4vh;
+  width: 35vh;
+  border-radius: 5vh;
+  position: relative;
+  right: 4vw;
+  bottom: 4vh;
+  margin-right: -5vw;
+  text-indent: 10px;
+  font-size: 20px;
+}
+.nameLabel{
+  font-size: 15px;
+  position: relative;
+  bottom: 8vh;
+  left: 2vw;
+}
+.contactInput{
+  width: 35.75vw;
+  height: 4vh;
+  border-radius: 10vh;
+  position: relative;
+  bottom: 5vh;
+  left: 2vw;
+  text-indent: 10px;
+  font-size: 20px;
+}
+.inputTitle{
+  position: relative;
+  bottom: 3vh;
+}
+.messageInput{
+  border-radius: 10px;
+  height: 10vh;
+  width: 35.75vw;
+  position: relative;
+  bottom: 6vh;
+  left: 2vw;
+  font-size: 20px;
+  /* font-family: 'Michroma'; */
+}
+#submitMessage{
+  background-color: rgb(207, 147, 117);
+  width: 7vw;
+  border-radius: 10vh;
+  margin-left: 2vw;
+  margin-top: 1vh;
 }
