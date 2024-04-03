@@ -1,17 +1,22 @@
 import React from "react";
 import AboutBlock from "./AboutBlock";
 import ProjectDisplay from "./ProjectDisplay";
+import ContactForm from "./ContactForm";
 
 export default function Home(){
     return (
         <>
         <div id="homeContainer">
-            <div id="scrollContainer">
-
-                <h6 id="scrollTextPrimary">NICO PASQUARIELLO: FRONTEND DEV </h6>
-
-                <h6 id="scrollTextSecondary">NICO PASQUARIELLO: FRONTEND DEV </h6>
-
+            
+            <div id="banner">
+                <div className="banner-slide">
+                    <h1 className="bannerText">NICO PASQUARIELLO: FRONTEND DEV</h1>
+                    <h1 className="bannerText" style={{color:'red'}}>NICO PASQUARIELLO: FRONTEND DEV</h1>
+                </div>
+                <div className="banner-slide">
+                    <h1 className="bannerText">NICO PASQUARIELLO: FRONTEND DEV</h1>
+                    <h1 className="bannerText" style={{color:'red'}}>NICO PASQUARIELLO: FRONTEND DEV</h1>
+                </div>
             </div>
             
             <h5 id='homeText'> 
@@ -64,6 +69,9 @@ export default function Home(){
                 }
             }
             />
+
+            <ContactForm/>
+
         </>
     )
 }

@@ -1,4 +1,5 @@
 html, body{
+  color: rgb(90, 90, 90);
   margin: 0;
   padding: 0;
   font-family: 'Michroma';
@@ -59,42 +60,31 @@ html, body{
   left: 18vw;
   line-height: 30px;
 }
-
-#scrollContainer{
-  height: 10vh;
+#banner{
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-#scrollTextPrimary, #scrollTextSecondary{
-  color: rgb(90, 90, 90);
-  position: relative;
+.banner-slide{
+  display: inline-block;
+  animation: 20s slideText infinite linear ;
+}
+
+.bannerText{
   font-size: 60px;
-  margin-top: 0;
-  height: 10vh;
-  width: max-content;
+  display: inline;
+  margin-left: 10vh;
 }
 
-#scrollTextPrimary{
-  display: flex;
-  justify-content: space-around;
-  animation: my-animation 15s linear infinite;
-}
-
-#scrollTextSecondary{
-  animation: my-animation 15s linear infinite; 
-  position: relative;
-  bottom:26vh;
-  left: 100%;
-  margin-left: 2.5%;
-}
-
-@keyframes my-animation {
-  0%{
-   transform: translate(10%);
+@keyframes slideText {
+  from{
+      transform: translateX(0%);
   }
-  100% {
-    transform: translate(-100%);
+  to{
+      transform: translateX(-100%);
   }
 }
+
 
 /* About Block - Home Page */
 #aboutBlock{
@@ -159,4 +149,12 @@ html, body{
 }
 .list{
   font-weight: 100;
+}
+
+
+/* Contact Form - Home Page / Contact Page */
+.contactFormContainer{
+  border: 1px solid;
+  height: 85vh;
+  font-size: 30px;
 }

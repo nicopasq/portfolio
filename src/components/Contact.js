@@ -1,9 +1,11 @@
 import React from "react";
+import './contact.css'
+
 
 export default function Contact(){
     return (
-        <div>
-            HELLO FROM CONTACT PAGE
+        <div id="contactContainer">
+
         </div>
     )
 }
