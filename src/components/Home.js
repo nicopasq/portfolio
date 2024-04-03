@@ -41,10 +41,29 @@ export default function Home(){
             style={
                 {
                     backgroundColor: "white",
-                    color:"grey"
+                    color:"rgb(77, 77, 87)"
                 }
         }/>
 
+        <ProjectDisplay
+            title="Amp Up"
+            textObj={
+                {
+                    mainContent:'Amp up is a social media for musicians to connect with each other by creating and responding to community discusison posts. Its a full-stack React.js application that uses a Ruby on Rails backend to manipulate Users and Post data.',
+                    features:['user auth', 'password protection'],
+                    creationDate:'9/27/2023',
+                    projectLinks:[
+                        {repo: 'https://github.com/nicopasq/amp_up'}
+                    ]
+                }
+            }
+            style={
+                {
+                    backgroundColor:'rgb(77, 77, 87)',
+                    color:'white'
+                }
+            }
+            />
         </>
     )
 }

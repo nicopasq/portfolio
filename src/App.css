@@ -129,7 +129,6 @@ html, body{
 .projectDisplay{
   overflow: hidden;
   height: 100vh;
-  border: 1px solid;
 }
 .displayContainer{
   width: 90%;
@@ -138,6 +137,7 @@ html, body{
   margin-right: auto;
 }
 .projectTitle{
+  /* color: rgb(77, 77, 87); */
   font-size: 40px;
   width: 10vh;
 }
@@ -148,7 +148,6 @@ html, body{
 }
 .projectTextBlock{
   text-align: left;
-  color: rgb(0, 0, 0);
   width: 65vh;
   position: relative;
   bottom: 45vh;
@@ -160,5 +159,4 @@ html, body{
 }
 .list{
   font-weight: 100;
-  color: black;
 }
