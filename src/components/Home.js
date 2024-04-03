@@ -41,7 +41,7 @@ export default function Home(){
             style={
                 {
                     backgroundColor: "white",
-                    color:"rgb(77, 77, 87)"
+                    color:"rgb(77, 87, 77)"
                 }
         }/>
 
@@ -59,7 +59,7 @@ export default function Home(){
             }
             style={
                 {
-                    backgroundColor:'rgb(77, 77, 87)',
+                    backgroundColor:'rgb(77, 87, 77)',
                     color:'white'
                 }
             }
