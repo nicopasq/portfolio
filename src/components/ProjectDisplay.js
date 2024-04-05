@@ -2,7 +2,7 @@ import { Paper } from '@mui/material';
 import image from '../project_images/placeHolderImg.jpg'
 import React from "react";
 
-export default function ProjectDisplay({title = 'TITLE', img, textObj = {}, style = {}}){
+export default function ProjectDisplay({title = 'TITLE', projectImages, textObj = {}, style = {}}){
     const projectFeatures = textObj.features?.map(feature => (<h4 className='list'>{feature}</h4>))
     const creationDate = textObj.creationDate
     const links = textObj.projectLinks?.map( (linkObj) => (
@@ -21,6 +21,7 @@ export default function ProjectDisplay({title = 'TITLE', img, textObj = {}, styl
                 <h1>{title}</h1>
             </div>
             <div className="projectImg">
+                {/* CREATE IMAGE CAROUSEL */}
                 <img src={image} className="projectImg"/>
             </div>
 

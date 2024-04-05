@@ -29,10 +29,6 @@ html, body{
   left: 45%;
   top: 2vh;
   text-decoration: none;
-  z-index: 9999999999;
-}
-#title:hover{
-  cursor: pointer;
 }
 #homeBtn{
   margin-left: 20px;
@@ -93,15 +89,17 @@ html, body{
 }
 #aboutBlockMainText{
   font-size: 60px;
-  color: rgba(255, 255, 255, 0.713);
+  color: rgb(255, 255, 255);
   position: relative;
   top: 12vh;
 }
 #dropdown{
-  border: 1px solid blue;
+  border: 0.5px solid rgba(121, 121, 121, 0.389);
+  border-radius: 10px;
   margin-top: 17%;
-  height: 35vh;
+  height: fit-content;
 }
+
 
 /* Project Block - Home Page */
 #projectBlock{
