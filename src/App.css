@@ -154,66 +154,53 @@ html, body{
 
 /* Contact Form - Home Page / Contact Page */
 .contactFormContainer{
-  border: 1px solid;
-  height: 91vh;
+  height: 90vh;
   font-size: 30px;
 }
 .contactForm{
-  height: fit-content;
-  width: 39vw;
-  margin-left: 5vw;
+  width: 31vw;
   position: relative;
-  bottom: 8vh;
+  left: 5vw;
+  bottom: 10vh;
 }
 .inputContainer{
-  border: 1px solid rgba(255, 255, 255, 0);
-  height: 18vh;
+display: inline-block;
+margin-right: 10%;
 }
-.nameInput{
-  height: 4vh;
-  width: 35vh;
-  border-radius: 5vh;
-  position: relative;
-  right: 4vw;
-  bottom: 4vh;
-  margin-right: -5vw;
-  text-indent: 10px;
-  font-size: 20px;
+.inputTitle{
+  margin-bottom: 1vh;
 }
 .nameLabel{
   font-size: 15px;
-  position: relative;
-  bottom: 8vh;
-  left: 2vw;
+  margin-bottom: 0;
+}
+.nameInput{
+  border-radius: 10vh;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid grey;
+  height: 3vh;
+  width: 11vw;
+  text-indent: 5%;
+  font-size: 20px;
 }
 .contactInput{
-  width: 35.75vw;
-  height: 4vh;
-  border-radius: 10vh;
-  position: relative;
-  bottom: 5vh;
-  left: 2vw;
-  text-indent: 10px;
-  font-size: 20px;
+    border-radius: 10vh;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid grey;
+    height: 3vh;
+    width: 25vw;
+    text-indent: 5%;
+    font-size: 20px;
 }
-.inputTitle{
-  position: relative;
-  bottom: 3vh;
+.nameContainer{
+  display: inline-block;
+  margin-right: 8%;
 }
 .messageInput{
+  height: 15vh;
+  width: 25vw;
   border-radius: 10px;
-  height: 10vh;
-  width: 35.75vw;
-  position: relative;
-  bottom: 6vh;
-  left: 2vw;
+  resize: none;
+  background-color: rgba(255, 255, 255, 0);
   font-size: 20px;
-  /* font-family: 'Michroma'; */
-}
-#submitMessage{
-  background-color: rgb(207, 147, 117);
-  width: 7vw;
-  border-radius: 10vh;
-  margin-left: 2vw;
-  margin-top: 1vh;
 }
