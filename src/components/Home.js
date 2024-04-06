@@ -38,7 +38,14 @@ export default function Home(){
             textObj={
                 {
                     mainContent:'Rock Hound is an e-commerce store designed for a user to browse and shop for various jewelry items. Its a full-stack, React.js application that employs Redux for complex state management and utilizes a Ruby on Rails database to manage User and Order data.',
-                    features:['User authentication','State updates the page in real time'],
+                    features:[
+                        'ReactJS front-end with Redux state management.',
+                        'Ruby on Rails back-end.',
+                        'Profile creation.',
+                        'User authentication and authorization using ActiveRecord and Sessions.',
+                        'Users can like an item, which adds it to their favorites.',
+                        'Site updates when a user makes a change to an order or item.'
+                    ],
                     creationDate:"11/21/2023",
                     projectLinks:[
                         {repo: 'https://github.com/nicopasq/jewelry_shop_v2'}
@@ -59,7 +66,13 @@ export default function Home(){
             textObj={
                 {
                     mainContent:'Amp up is a social media for musicians to connect with each other by creating and responding to community discusison posts. Its a full-stack React.js application that uses a Ruby on Rails backend to manipulate Users and Post data.',
-                    features:['user auth', 'password protection'],
+                    features:[
+                        'ReactJS front-end | Ruby on Rails back-end.',
+                        'Profile creation',
+                        'Users can post discussion posts.',
+                        'Users can respond to posts',
+                        'Users can view all of thier own responses.'
+                    ],
                     creationDate:'9/27/2023',
                     projectLinks:[
                         {repo: 'https://github.com/nicopasq/amp_up'}

@@ -21,7 +21,7 @@ export default function ContactForm() {
 
   return (
     <div className="contactFormContainer">
-      <h1 style={{ position: "relative", bottom: "4vh" }}>Contact Me</h1>
+      <h1 style={{ position: "relative", bottom: "4vh", left:"10px" }}>Contact Me</h1>
       <form className="contactForm" onSubmit={(e) => submit(e)}>
         <div className="nameContainer">
           <h6 className="inputTitle">Name (required)</h6>

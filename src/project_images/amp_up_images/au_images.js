@@ -4,10 +4,10 @@ import profile from './profile.png'
 import startDiscussion from './startDiscussion.png'
 
 const au_images =[
-home,
-login,
-profile,
-startDiscussion
+    login,
+    home,
+    startDiscussion,
+    profile
 ]
 
 export default au_images;

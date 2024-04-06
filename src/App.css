@@ -130,15 +130,24 @@ html, body{
   width: 10vh;
 }
 .projectImg{
-  height: 40vh;
+  height: 35vh;
   width: 70vh;
+  border-radius: 10px;
+  border: 1px solid ;
+}
+#nextBtn, #backBtn{
+  background-color: rgba(255, 255, 255, 0);
   border-radius: 10vh;
+  height: 5vh;
+  width: 10vw;
+  margin-right: 18.75vw;
+  font-size: 20px;
 }
 .projectTextBlock{
   text-align: left;
   width: 65vh;
   position: relative;
-  bottom: 45vh;
+  bottom: 55vh;
   left: 60%;
 }
 .date{

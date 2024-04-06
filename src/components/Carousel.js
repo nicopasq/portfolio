@@ -26,8 +26,8 @@ export default function Carousel({images}){
         <>
             <div id="imageCarousel">
                 {displayImage[n]}
-                <button onClick={e => changeImage(e)} name='back'>Back</button>
-                <button onClick={e => changeImage(e)} name='next'>Next</button>
+                <button onClick={e => changeImage(e)} name='back' id="backBtn">Back</button>
+                <button onClick={e => changeImage(e)} name='next' id="nextBtn">Next</button>
             </div>
         </>
     )

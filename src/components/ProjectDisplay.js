@@ -4,7 +4,7 @@ import React from "react";
 import Carousel from './Carousel';
 
 export default function ProjectDisplay({title = 'TITLE', projectImages, textObj = {}, style = {}}){
-    const projectFeatures = textObj.features?.map((feature, index) => (<h4 key={index} className='list'>{feature}</h4>))
+    const projectFeatures = textObj.features?.map((feature, index) => (<h4 key={index} className='list'>* {feature}</h4>))
     const creationDate = textObj.creationDate
     const links = textObj.projectLinks?.map( (linkObj) => (
         <a key={Object.keys(linkObj)[0]} href={Object.values(linkObj)[0]} style={{textDecoration:"none"}}>
@@ -21,7 +21,7 @@ export default function ProjectDisplay({title = 'TITLE', projectImages, textObj 
             <div className="projectTitle">
                 <h1>{title}</h1>
             </div>
-            <div className="projectImg">
+            <div className="projectImgContainer">
                 <Carousel  images={projectImages}/> 
             </div>
 
