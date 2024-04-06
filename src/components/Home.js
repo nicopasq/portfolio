@@ -2,16 +2,8 @@ import React from "react";
 import AboutBlock from "./AboutBlock";
 import ProjectDisplay from "./ProjectDisplay";
 import ContactForm from "./ContactForm";
-import rh_home from '../project_images/rockHoundImgs/home.png'
-import rh_cart from '../project_images/rockHoundImgs/Cart.png'
-import rh_confirmation from '../project_images/rockHoundImgs/confirmation.png'
-import rh_profile from '../project_images/rockHoundImgs/profile.png'
-import rh_shop from '../project_images/rockHoundImgs/RingShop.png'
-import rh_success from '../project_images/rockHoundImgs/successPage.png'
-import au_home from '../project_images/amp_up_images/home.png'
-import au_login from '../project_images/amp_up_images/Login.png'
-import au_profile from '../project_images/amp_up_images/profile.png'
-import au_startDiscussion from '../project_images/amp_up_images/startDiscussion.png'
+import rh_images from "../project_images/rockHoundImgs/rh_images";
+import au_images from "../project_images/amp_up_images/au_images";
 
 export default function Home(){
     return (
@@ -53,18 +45,8 @@ export default function Home(){
                     ]
                 }        
             }
-            projectImages={
-                {
-                    rockHound:{
-                        home:rh_home,
-                        cart:rh_cart,
-                        confirmation:rh_confirmation,
-                        profile:rh_profile,
-                        shop:rh_shop,
-                        success:rh_success
-                    }
-                }
-            }
+            projectImages={rh_images}
+        
             style={
                 {
                     backgroundColor: "white",
@@ -84,16 +66,7 @@ export default function Home(){
                     ]
                 }
             }
-            projectImages={
-                {
-                    ampUp:{
-                        home:au_home,
-                        login:au_login,
-                        profile:au_profile,
-                        startDiscussion:au_startDiscussion
-                    }
-                }
-            }
+            projectImages={au_images}
             style={
                 {
                     backgroundColor:'rgb(77, 87, 77)',

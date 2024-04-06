@@ -1,9 +1,10 @@
 import { Paper } from '@mui/material';
 import image from '../project_images/placeHolderImg.jpg'
 import React from "react";
+import Carousel from './Carousel';
 
 export default function ProjectDisplay({title = 'TITLE', projectImages, textObj = {}, style = {}}){
-    const projectFeatures = textObj.features?.map(feature => (<h4 className='list'>{feature}</h4>))
+    const projectFeatures = textObj.features?.map((feature, index) => (<h4 key={index} className='list'>{feature}</h4>))
     const creationDate = textObj.creationDate
     const links = textObj.projectLinks?.map( (linkObj) => (
         <a key={Object.keys(linkObj)[0]} href={Object.values(linkObj)[0]} style={{textDecoration:"none"}}>
@@ -21,8 +22,7 @@ export default function ProjectDisplay({title = 'TITLE', projectImages, textObj 
                 <h1>{title}</h1>
             </div>
             <div className="projectImg">
-                {/* CREATE IMAGE CAROUSEL */}
-                <img src={image} className="projectImg"/>
+                <Carousel  images={projectImages}/> 
             </div>
 
             <div className="projectTextBlock">
