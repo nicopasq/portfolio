@@ -33,14 +33,27 @@ html, body{
 #homeBtn{
   margin-left: 20px;
 }
-#footer{
+.footer{
   width: 100%;
-  height: 10vh;
+  height: 15vh;
   background:linear-gradient(rgb(207, 147, 117), rgb(164, 96, 107) );
   position: absolute;
 }
-
-
+#linkedIn, #github{
+  margin-top: -1vh;
+  height: 6vh;
+  margin-right: 4vh;
+}
+.socials{
+  position: relative;
+  bottom: 15vh;
+  left: 50vw;
+}
+.contactMe{
+  position: relative;
+  bottom: 5vh;  
+  left: 70vw;
+}
 /* Home Page */
 #homeContainer{
   height: 100vh;
