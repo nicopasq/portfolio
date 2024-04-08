@@ -61,13 +61,13 @@ html, body{
 
 #homeText{
   font-weight: 100;
-  font-size: 16px;
-  width: 26vw;
+  font-size: 30px;
+  width: 50vw;
   height: 10vh;
   position: relative;
   top: 20vh;
-  left: 18vw;
-  line-height: 30px;
+  left: 25vw;
+  line-height:55px;
 }
 #banner{
   overflow: hidden;
