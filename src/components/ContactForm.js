@@ -1,18 +1,38 @@
 import { Button, Container, TextField, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import emailjs from '@emailjs/browser'
 
 export default function ContactForm() {
+  const form = useRef()
   const [formInput, setFormInput] = useState({
     firstName: "",
     lastName: "",
     email: "",
     subject: "",
-    message: "",
+    message: ""
   });
 
   function submit(e) {
     e.preventDefault();
-    console.log(formInput);
+
+    emailjs.sendForm('service_7717cav', 'template_4p2yrzm', form.current, {
+      publicKey:'Bbc_vFdECfGAAx1NK'
+    })
+    .then(
+      () => {
+        alert("Your email was sent!");
+        setFormInput(  {
+        firstName: "",
+        lastName: "",
+        email: "",
+        subject: "",
+        message: ""
+      });
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+      },
+    );
   }
 
   function updateInput(e) {
@@ -22,7 +42,7 @@ export default function ContactForm() {
   return (
     <div className="contactFormContainer">
       <h1 style={{ position: "relative", bottom: "4vh", left:"10px" }}>Contact Me</h1>
-      <form className="contactForm" onSubmit={(e) => submit(e)}>
+      <form ref={form} className="contactForm" onSubmit={(e) => submit(e)}>
         <div className="nameContainer">
           <h6 className="inputTitle">Name (required)</h6>
           <h6 className="nameLabel">First Name</h6>
