@@ -39,6 +39,9 @@ html, body{
   background:linear-gradient(rgb(207, 147, 117), rgb(164, 96, 107) );
   position: absolute;
 }
+.footerTxt{
+  font-size: 40px;
+}
 #linkedIn, #github{
   margin-top: -1vh;
   height: 6vh;
@@ -46,12 +49,12 @@ html, body{
 }
 .socials{
   position: relative;
-  bottom: 15vh;
+  bottom: 23vh;
   left: 50vw;
 }
 .contactMe{
   position: relative;
-  bottom: 5vh;  
+  bottom: 13vh;  
   left: 70vw;
 }
 /* Home Page */

@@ -7,7 +7,7 @@ export default function Footer(){
 
     return (
         <div className="footer">
-            <h3 style={{marginLeft:'10px'}}>PASQMEDIA</h3>
+            <h3 className="footerTxt">PASQMEDIA</h3>
             <div className="contactMe">
                 <h3 >Gmail</h3>
                 <h4>nicopasquariello@gmail.com</h4>
